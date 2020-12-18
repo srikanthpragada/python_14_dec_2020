@@ -23,7 +23,3 @@ print(f"               {after_discount:8.2f}")
 print(f"+ Tax        : {tax:8.2f}")
 print(f"               ----------")
 print(f"Net Amount   : {net_amount:8.2f}")
-
-
-
-
