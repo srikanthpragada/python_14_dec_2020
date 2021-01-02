@@ -13,5 +13,8 @@ codes = ['AB3455', 'XY4822', 'PQ1234', 'AB1876']
 # for n in sorted(names, key = len):
 #     print(n)
 
-for v in sorted(codes, key=get_code):
+# for v in sorted(codes, key=get_code):
+#     print(v)
+
+for v in sorted(codes, key= lambda s: s[2:]):
     print(v)

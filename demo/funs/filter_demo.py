@@ -13,9 +13,14 @@ def hasupper(s: str) -> bool:
 lst = [10, -5, 30, -22, 50]
 names = ["Larry", "richards", "Don", "Jack", "bilL"]
 
-for n in filter(ispositive, lst):
+# for n in filter(ispositive, lst):
+#     print(n)
+
+for n in filter(lambda v : v > 0, lst):
     print(n)
 
+for n in filter(lambda v: v % 2 == 0, lst):
+    print(n)
 
 for n in filter(hasupper, names):
     print(n)
