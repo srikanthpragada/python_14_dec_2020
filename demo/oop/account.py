@@ -21,6 +21,7 @@ class SavingsAccount:
 
 
 s = SavingsAccount(1, "James")
+s.email = "abc@gmail.com"
 s.deposit(10000)
 s.withdraw(15000)
 print(s.getbalance())
