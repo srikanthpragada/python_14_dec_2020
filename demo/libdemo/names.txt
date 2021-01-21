@@ -1,6 +1,6 @@
-Python
 C
 C++
-Java
-TypeScript
 Cobol
+Java
+Python
+TypeScript

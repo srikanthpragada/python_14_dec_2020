@@ -1,9 +1,15 @@
 f = open("marks.txt", "rt")
 
 for line in f.readlines():
-    # marks =[int(m) for m in line.split(",")]
-    marks = map(int, line.split(","))
-    print(sum(marks))
+    total = count = 0
+    for v in line.split(","):
+        try:
+            m = int(v)
+            total += m
+            count += 1
+        except:
+            pass
 
+    print(f"{total:4}  {total // count:3}")
 
 f.close()
