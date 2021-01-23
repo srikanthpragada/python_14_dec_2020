@@ -1,0 +1,35 @@
+Expression     Match	Not Match
+----------------------------------
+[ABC]    		A       	D 
+[A-Z]           X           a
+[A-Za-z]		a 			0
+[^A-Z]          0    	    A
+^A              Ab          BB
+0$              10          abc
+.               a           
+java|python     java        C#
+
+[0-9]{2}	    20          1
+[a-z]+          abc         A
+A[0-9]*         A12         B12
+                A
+A{2,3}          AA          A
+
+
+\d+             123         abc
+\D+             abc         123 
+
+\w+             abc123      ,
+\W+             ---         abc
+
+\s+             '   '       abc
+
+
+Examples:
+
+1. First letter is uppercase followed by 3 digits
+
+[A-Z]\d{3}
+
+2. Aadhar card 
+
